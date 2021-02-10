@@ -138,7 +138,7 @@ class doAttack(Thread):
 
             try:
                 if self.__command is not None:
-                    remoteOps.__output = 'C:\\Users\\Public\\__output'
+                    # remoteOps.__output = 'C:\\Users\\Public\\__output'
                     remoteOps._RemoteOperations__executeRemote(self.__command)
                     logging.info("Executed specified command on host: %s", self.__SMBConnection.getRemoteHost())
                     self.__answerTMP = b''
